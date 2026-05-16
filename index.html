@@ -148,9 +148,9 @@ function login(){
   const pass = document.getElementById("password").value.trim();
 
   if(!name || !pass){
-    toast("⚠️ सबै field भर्नुहोस्");
+    toast("⚠️ Please fill in all fields. Please try again ");
     return;
-  }
+  }r
 
   toast("⏳ Checking...");
 
@@ -165,14 +165,14 @@ function login(){
       );
 
       if(user){
-        toast("✅ Login सफल");
+        toast("✅ Login successful..");
 
         setTimeout(()=>{
-          window.location.href = "https://at397988-dev.github.io/table/";
+          window.location.href = "https://at397988-dev.github.io/Time/";
         },800);
 
       } else {
-        toast("❌ NAME वा PASSWORD गलत छ");
+        toast("❌Name or password is incorrect");
       }
 
     })
